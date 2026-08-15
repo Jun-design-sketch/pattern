@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: pessimistic-lock
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lock_lab
+    username: lock_user
+    password: lock_password
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

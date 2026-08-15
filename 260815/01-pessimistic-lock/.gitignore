@@ -1,0 +1,2 @@
+# 01-pessimistic-lock/.gitignore
+*.sql.gz
