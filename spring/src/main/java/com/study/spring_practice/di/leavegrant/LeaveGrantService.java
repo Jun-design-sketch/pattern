@@ -17,6 +17,7 @@ public class LeaveGrantService {
             throw new IllegalArgumentException();
         }
         LocalDate validTo = validFrom.plusYears(2).minusDays(1);
-        leaveGrantRepository.save(leaveGrantId, userId, validFrom, validTo, grantDays);
+        LeaveGrant leaveGrant = new LeaveGrant(userId, leaveGrantId, validFrom, validTo, grantDays);
+        leaveGrantRepository.save(leaveGrant);
     }
 }

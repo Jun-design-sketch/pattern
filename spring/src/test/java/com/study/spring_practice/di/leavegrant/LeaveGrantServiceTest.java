@@ -12,7 +12,7 @@ public class LeaveGrantServiceTest {
     @Autowired
     private LeaveGrantService leaveGrantService;
     @Autowired
-    private LeaveGrantRepository leaveGrantRepository;
+    private InMemoryRepository leaveGrantRepository;
 
     @Test
     void saveTestSuccess() {
